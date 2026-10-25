@@ -1,0 +1,21 @@
+{
+  "name": "duochat-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DuoChat - chat temps réel pour VS Code",
+  "workspaces": [
+    "extension",
+    "server"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace extension",
+    "typecheck": "npm run typecheck --workspace extension",
+    "watch": "npm run watch --workspace extension",
+    "test": "npm test --workspace server",
+    "server": "npm start --workspace server",
+    "package": "npm run package --workspace extension"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

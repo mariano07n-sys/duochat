@@ -1,0 +1,9 @@
+.vscode/**
+src/**
+node_modules/**
+esbuild.mjs
+tsconfig.json
+**/*.ts
+**/*.map
+media/icon-source.svg
+*.vsix
